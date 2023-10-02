@@ -5,11 +5,11 @@ const bodyParser = require("body-parser");
 const router = require("./router");
 const dbConnect = require("./config/mongodb");
 const path = require("path");
-const swaggerUi = require("swagger-ui-express");
-const YAML = require("yaml");
-const swaggerFile = require("./doc/swagger.js");
 
-const swaggerDocument = YAML.parse(swaggerFile, "utf8");
+const YAML = require("yaml");
+
+
+
 
 // connect db
 dbConnect();
